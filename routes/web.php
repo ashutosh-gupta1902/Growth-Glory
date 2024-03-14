@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Frontend\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 /*
@@ -13,14 +14,4 @@ use Illuminate\Support\Facades\View;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-// Route::get('/admin', function () {
-//     return view('auth.login');
-// })->name('admin.login');
-
-// Route::get('/app', function () {
-//     return view('auth.login');
-// })->name('app.login');
+Route::get("/", [HomeController::class,'index']);

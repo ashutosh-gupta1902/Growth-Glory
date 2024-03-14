@@ -5,7 +5,6 @@ namespace App\Filament\Resources\Blog;
 use App\Filament\Resources\Blog\CategoryResource\Pages;
 use App\Filament\Resources\Blog\CategoryResource\RelationManagers;
 use App\Models\Blog\Category;
-use App\Models\Blog\Post;
 use Filament\Forms;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Select;

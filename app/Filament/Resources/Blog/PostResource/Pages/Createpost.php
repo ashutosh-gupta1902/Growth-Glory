@@ -8,5 +8,5 @@ use Filament\Resources\Pages\CreateRecord;
 
 class Createpost extends CreateRecord
 {
-    protected static string $resource = postResource::class;
+    protected static string $resource = PostResource::class;
 }

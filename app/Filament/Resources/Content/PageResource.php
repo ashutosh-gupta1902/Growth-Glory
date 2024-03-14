@@ -169,9 +169,7 @@ class PageResource extends Resource
                 ColorColumn::make('color')
                     ->toggleable(),
                 ImageColumn::make('thumbnail')
-                    ->searchable()
-                    ->toggleable()
-                    ->sortable(),
+                    ->toggleable(),
                 TextColumn::make('created_at')
                     ->dateTime()
             ])
@@ -192,6 +190,7 @@ class PageResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

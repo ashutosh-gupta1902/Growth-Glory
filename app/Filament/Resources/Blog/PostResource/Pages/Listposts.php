@@ -17,8 +17,8 @@ class Listposts extends ListRecords
         ];
     }
 
-    protected function getTableRecordsPerPageSelectOptions(): array
-    {
-        return [100];
-    }
+    // protected function getTableRecordsPerPageSelectOptions(): array
+    // {
+    //     return [100,200,300];
+    // }
 }
